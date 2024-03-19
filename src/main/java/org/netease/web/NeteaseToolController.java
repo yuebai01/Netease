@@ -47,7 +47,7 @@ public class NeteaseToolController {
 
 
     @PostMapping("save")
-    public Result save(@Validated @RequestBody RegistrationVo registrationVo) {
-        return neteaseToolService.save(registrationVo);
+    public String registerUserApplication (@Validated @RequestBody RegistrationVo registrationVo) {
+        return neteaseToolService.registerUserApplication(registrationVo);
     }
 }
